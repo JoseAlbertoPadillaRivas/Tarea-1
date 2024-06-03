@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AdminLTE 3 | Blank Page</title>
+    <title>FOTO PLUS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -22,17 +22,20 @@
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="../../index3.html" class="nav-link">Home</a>
+                    @Html.ActionLink("Pagina Principal", "Index", "Home", new { @class = "nav-link" }, new { @class = "nav-link" })
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="#" class="nav-link">Contact</a>
+                    @Html.ActionLink("Contacto", "Contact", "Home", new { @class = "nav-link" }, new { @class = "nav-link"})
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    @Html.ActionLink("Iniciar Sesion", "Login", "Home", new { @class = "nav-link" }, new { @class = "nav-link", style = "color:blue ;" })
                 </li>
             </ul>
 
 
             <form class="form-inline ml-3">
                 <div class="input-group input-group-sm">
-                    <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control form-control-navbar" type="search" placeholder="Buscar" aria-label="Search">
                     <div class="input-group-append">
                         <button class="btn btn-navbar" type="submit">
                             <i class="fas fa-search"></i>
@@ -43,28 +46,19 @@
             
         </nav>
 
-        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <aside class="main-sidebar sidebar-light-primary elevation-4">
 
-            <a href="../../index3.html" class="brand-link">
+            <a href="#" class="brand-link">
 
-                <img src="~/root/dist/img/AdminLTELogo.png"
+                <img src="~/root/dist/img/FotoPlusLogo.png"
                      alt="FOTO PLUS"
-                     class="brand-image img-circle elevation-3"
+                     class="brand-image elevation-3"
                      style="opacity: .8">
                 <span class="brand-text font-weight-light">FOTO PLUS</span>
             </a>
 
 
             <div class="sidebar">
-
-                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-                    <div class="image">
-                        <img src="~/root/dist/img/user1-128x128.jpg" class="img-circle elevation-2" alt="User Image" />>
-                    </div>
-                    <div class="info">
-                        <a href="#" class="d-block">Alexander Pierce</a>
-                    </div>
-                </div>
 
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
@@ -136,32 +130,6 @@
 
         </aside>
         @RenderBody()
-
-        <div class="content-wrapper">
-
-            <section class="content-header">
-                <div class="container-fluid">
-                    <div class="row mb-2">
-                        <div class="col-sm-6">
-                            <h1>Menu Principal</h1>
-                        </div>
-                        <div class="col-sm-6">
-                            <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active">Blank Page</li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="content">
-            </section>
-
-        </div>
-
-
         <footer class="main-footer">
             <div class="float-right d-none d-sm-block">
                 <b>FOTO PLUS</b> TAREA 1 GRUPO 2
